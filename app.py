@@ -8,7 +8,7 @@ ENV = 'dev'
 
 if ENV == 'dev':
     app.debug = True
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:Oseanasee69!@localhost/lexus'
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://<dbusername>:<dbpassword>@localhost/lexus'
 else:
     app.debug = False
     app.config['SQLALCHEMY_DATABASE_URI'] = ''
